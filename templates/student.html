@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <title>Student Details</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                color: #333;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Student Details</h1>
+    
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>roll_number</th>
+                <th>address</th>
+            </tr>
+            
+            {% for student in students %}
+            <tr>
+                <td>Name:{{ student.name }}</td>
+                <td>roll_number:{{ student.roll_number }}</td>
+                <td>address:{{ student.address }}</td>
+            </tr>
+            {% endfor %}
+    
+        </table>
+    
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    

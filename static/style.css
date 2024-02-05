@@ -1,0 +1,56 @@
+.hr-line{
+    border-bottom: 4px solid #a89f9f;
+   
+}
+.img-fluid{
+    border-radius: 10%;
+}
+
+.project{
+    margin-left: 10%;
+}
+.date {
+    font-family:"Montserrat";
+}
+*{
+    font-family:"Montserrat";
+    color: #454545;
+}
+.club-head{
+    font-weight: 600;
+    margin-left: 90px;
+}
+.para-club{
+    font-size: 1.5rem;
+    color: #454545;
+}
+
+p{
+    color: #454545;   
+}
+.p-table{
+    font-size: 20px;
+}
+.end{
+    font-size: .5rem;
+}
+.second{
+    height: 60vh;
+    width: 100%;
+}
+thead{
+    background-color: #4B93AB;
+}
+.table{
+    border: 2px solid  #4B93AB;
+    justify-content: center;
+    font-family: "raleway";
+    font-weight: 800;
+    color: azure;
+    align-items: center;
+   
+
+}
+.tab2{
+    background-color: #4B93AB;   
+}

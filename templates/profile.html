@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/profile.css">
+    <title>Roatry Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-7">
+                <img src="../static/rotrylogo.png" class="w-75" alt="Rotary Logo">
+                <h2 class="roatry-head">
+                    Rtn. PHF. S. Ganesan <br>
+                </h2>
+                <div>
+                    <h4 class="font-weight-bold mt-3 roatry-head2">PRESIDENT</h4>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+               <div> <label>RI Id</label></div>
+               <div>  <label>Phone No</label></div>
+               <div> <label>Mail Id</label></div>
+               <div> <label>Business / Profession</label></div>
+            </div>
+            <div class="col-lg-4">
+               <div class="mt-2"> <input type="text" name="username" id="username" class="form-control" placeholder="{{data['MemberID']}}"></div>
+               <div class="mt-2"> <input type="text" name="password" id="password" class="form-control"placeholder="{{data['MobilePhone']}}"></div>
+               <div class="mt-2"><input type="text" name="name" id="name" class="form-control" placeholder="{{data['PersonalEmail']}}"></div>
+               <div class="mt-2"><input type="text" name="fathername" id="fathername" class="form-control" placeholder="{{data['Classification']}}"></div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+                <h3 class=""> ROATRY PROFILE </h3>
+            </div>
+            <div class="col-lg-7"></div>
+        </div>
+    </div>
+       
+    <div class="container mt">
+       
+        <div class="row">
+            
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+               
+               <div><label class="label1">Original join date</label></div>
+               <div><label class="label1">Current club join date</label></div>
+               <div><label class="label1">Years of service</label></div>
+               
+            </div>
+            <div class="col-lg-4">
+               <div class="mt-2"> <input type="text" name="username" id="username" class="form-control" placeholder="{{data['OriginalJoinDate']}}"></div>
+               <div class="mt-2"> <input type="text" name="password" id="password" class="form-control"placeholder="{{data['CurrentClubJoinDate']}}"></div>
+               <div class="mt-2"><input type="text" name="name" id="name" class="form-control" placeholder="{{data['YearsOfService']}}"></div>
+               
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h3 class="">ROLE</h3>
+                <p class="role-para">Coimbatore North</p>
+                <p class="role-para">{{data['ROLES']}}<P></P>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h3>MEMBER SPONSORSHIP HISTORY</h3>
+                <h5 class="spon-p1">SPONSOREDBY</h5>
+                <p class="spons-para">CoimbatoreNorth,TamilNadu,India(RotaryClub)<br> <span><input type="text" class="form-control"></span></p>
+                <p class="role-para">{{data['Sponser']}}</p>
+                <p></p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function generatePDF() {
+            const pdf = new jsPDF();
+            const element = document.body;
+            
+            pdf.fromHTML(element, 15, 15); // Adjust margins as needed
+
+            pdf.save('RotaryClubProfile.pdf'); 
+        }
+    </script>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function generatePDF() {
+            const pdf = new jsPDF();
+            const element = document.body;
+            
+            pdf.fromHTML(element, 15, 15); // Adjust margins as needed
+            
+            pdf.save('RotaryClubProfile.pdf');
+        }
+    </script>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function generatePDF() {
+            const pdf = new jsPDF();
+            const element = document.body;
+            
+            pdf.fromHTML(element, 15, 15); // Adjust margins as needed
+            
+            pdf.save('RotaryClubProfile.pdf');
+        }
+    </script>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+</<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function generatePDF() {
+            const pdf = new jsPDF();
+            const element = document.body;
+            
+            pdf.fromHTML(element, 15, 15); // Adjust margins as needed
+            
+            pdf.save('RotaryClubProfile.pdf');
+        }
+    </script>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+
+</html>
+
+
+
+
+
+

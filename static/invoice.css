@@ -1,0 +1,63 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../templates//fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  *{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    
+}
+.rotry-logo{
+   height: 40vh;
+   width: 500px;
+   margin-right: 1.5rem;
+   line-height: normal;
+}
+h1{
+    font-weight: 700;
+}
+.address{
+    font-size: 28px;
+}
+.rece-no{
+    font-size: 20px;
+}
+.rtn-name{
+    font-size: 22px;
+    justify-content: center;
+}
+
+.date-issued{
+    font-size: 19px;
+}
+p{
+    font-size: 22px;
+}
+.hr-line{
+    
+        border-bottom: 3px solid black;
+        width: 80%;
+        box-shadow: 5px solid black;
+       
+}
+.Club-yearly{
+    font-size: 18px;
+}
+.end{
+    font-size: 24px;
+}
+.end1{
+    font-size: 23px;
+}
+
+.donte{
+    /* border: 1px solid ; */
+    width: 80%;
+    margin-left: 85px;
+    background: #D2DDEB;
+}
+.amt-para{
+    font-weight: 700;
+}
